@@ -40,3 +40,72 @@ console.log(hello);
 
 // String properties and methods
 
+const s='keywords, strings, properties, arrays';
+console.log(s.length);
+console.log(s.substring(0,8));
+console.log(s.split(', '));
+
+// Arrays - variables taht hold multiple values
+
+const number = new Array(1,2,3,4,5);
+console.log(number);
+
+const fruits = ['apples', 'oranges', 'grapes'];
+console.log(fruits);
+
+console.log(fruits[1]);
+
+fruits[3] = 'pears'; // add pear to end of array
+
+console.log(fruits);
+
+fruits.push('mangoes'); //push value to end
+console.log(fruits);
+fruits.unshift('strawberries'); // add value at beginning
+console.log(fruits);
+fruits.pop();
+
+console.log(fruits);
+
+console.log(Array.isArray(fruits));
+console.log(Array.isArray('hello'));
+
+console.log(fruits.indexOf('oranges'));
+
+// objects
+
+const person = { fname:'John', lname:'doe', age: 30, hobbies:['music','movies'], address: {street:'50 main street', city: 'Boston', stat: 'MA'}};
+console.log(person.hobbies[1]);
+console.log(person.address.city);
+
+// add properties
+
+person.email = 'john@gmail.com';
+console.log(person);
+
+//Arrays of objects
+
+const todos =[
+    {id:1, text:'apple', available:true}, {id:2, text:'orange', available:false}, {id:3, text:'grapes', available:true} 
+];
+console.log(todos);
+
+console.log(todos[1].available);
+
+
+// convert this array object to json
+
+const todojson = JSON.stringify(todos);
+console.log(todojson);
+
+
+
+
+
+
+
+
+
+
+
+
